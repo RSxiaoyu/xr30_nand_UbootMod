@@ -6,7 +6,11 @@
 ![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
 ![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
 
-A template for building OpenWrt with GitHub Actions
+Building ImmortalWrt-24.10-6.6 for CMCC XR30 Uboot Mod with GitHub Actions.
+
+Source code: https://github.com/padavanonly/immortalwrt-mt798x-6.6
+
+Features: 大分区 纯净无软件包 MTK闭源驱动
 
 ## Usage
 
