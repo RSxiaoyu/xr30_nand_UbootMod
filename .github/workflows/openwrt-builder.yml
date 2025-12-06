@@ -132,9 +132,8 @@ jobs:
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         echo "## [🚀同步上游更新：](https://github.com/padavanonly/immortalwrt-mt798x-6.6)" > release.txt
         cd openwrt
-        git log -5 --pretty=format:"- %s (%cr)" >> ../release.txt
+        git log --pretty=format:"- [%h] %s (%cr)" -n 5 >> ../release.txt
         cd ..
-        [ ${UPLOAD_GOFILE} = true && ${{ steps.gofile.outputs.url }} ] && echo "🔗 [GoFile](${{ steps.gofile.outputs.url }})" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
